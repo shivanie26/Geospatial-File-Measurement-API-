@@ -1,0 +1,24 @@
+# Geospatial File Measurement API - pinned, mutually compatible versions.
+# Verified together on Python 3.12 (Linux). Python 3.11+ is required.
+#
+# pyogrio, pyproj and shapely publish binary wheels that bundle GDAL, PROJ and
+# GEOS for Windows, macOS and Linux, so no system GDAL install is normally needed.
+
+# --- web framework -----------------------------------------------------------
+fastapi==0.143.0
+uvicorn==0.54.0
+python-multipart==0.0.32      # multipart/form-data parsing for file uploads
+pydantic==2.14.0
+pydantic-settings==2.15.0
+
+# --- geospatial stack --------------------------------------------------------
+geopandas==1.2.0
+shapely==2.2.0
+pyproj==3.8.0
+pyogrio==0.13.0               # GDAL reader used by GeoPandas (includes the KML driver)
+numpy==2.5.4
+pandas==3.0.6
+
+# --- tests -------------------------------------------------------------------
+pytest==9.1.1
+httpx==0.28.1                 # HTTP client used by Starlette's TestClient

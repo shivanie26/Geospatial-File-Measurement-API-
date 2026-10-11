@@ -1,0 +1,33 @@
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Test / coverage output
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Runtime data: uploads, results, metadata, scratch space and lock files
+storage/*
+!storage/.gitkeep
+
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
